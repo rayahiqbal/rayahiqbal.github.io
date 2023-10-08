@@ -1,1 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.cake {
+    width: 200px;
+    height: 400px;
+    background-color: #ffb6c1; /* Pastel pink */
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.layer {
+    width: 100%;
+    height: 80px;
+    background-color: #ffcccb; /* Lighter pink */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.layer:nth-child(odd) {
+    background-color: #ffc0cb; /* Even lighter pink */
+}
+
+/* Hover effect */
+.layer:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
